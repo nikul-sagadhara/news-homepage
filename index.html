@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>NEWS HOMEPAGE</title>
+</head>
+<body>
+    
+    <main class="container">
+        <header class="header">
+            <div class="main-logo"><img src="images/logo.svg" alt="logo"></div>
+            <nav class="navbar">
+                <ul class="nav-links" id="menu-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#New">New</a></li>
+                    <li><a href="#Popular">Popular</a></li>
+                    <li><a href="#Trending">Trending</a></li>
+                    <li><a href="#Categories">Categories</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-container" id="hamburger" onclick="myFunction(this)">
+                <div class="line1 bar"></div>
+                <div class="line2 bar"></div>
+                <div class="line3 bar"></div> 
+            </div>
+        </header>
+
+        <br>
+        <br>
+        
+        <div class="grid-box">
+            <div class="box-one"><img src="images/image-web-3-desktop.jpg" class="desktop-hero-img" alt=""> <img src="images/image-web-3-mobile.jpg" class="mobile-hero-img" alt=""></div>
+            <div class="box-two">
+                <b>The Bright Future of Web 3.0?</b>
+            </div>
+            <div class="box-three">
+                <p>We dive into the next evolution of the web that claims to put the    power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+                </p>
+                <button class="readmore-btn">READ MORE</button>
+            </div>
+            <div class="box-four">
+                <h2>New</h2>
+                <br>
+                <b>Hydrogen VS Electric Cars</b>
+                <br> <br>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <br>
+                <hr>
+                <br>
+                <b>The Downsides of AI Artistry</b>
+                <br><br>
+                <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                <br>
+                <hr>
+                <br>
+                <b>Is VC Funding Drying Up?</b>
+                <br><br>
+                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+                <div class="btm-grid-one">
+                    <div class="retro-pc-img">
+                        <img src="images/image-retro-pcs.jpg" alt="retro pc">
+                    </div>
+                    <div class="retro-dtl">
+                        <h3>01</h3>
+                        <b>Reviving Retro PCs</b>
+                        <p>What happens when old PCs are given modern upgrades?</p>
+                    </div>
+                </div>
+                <div class="btm-grid-two">
+                    <div class="lptp-img">
+                        <img src="images/image-top-laptops.jpg" alt="laptops">
+                    </div>
+                    <div class="lptp-dtl">
+                        <h3>02</h3>
+                        <b>Top 10 Laptops of 2022</b>
+                        <p>Our best picks for various needs and budgets.</p>
+                    </div>
+                </div>
+                <div class="btm-grid-three">
+                    <div class="gaming-img">
+                        <img src="images/image-gaming-growth.jpg" alt="gaming">
+                    </div>
+                    <div class="gaming-dtl">
+                        <h3>03</h3>
+                        <b>The Growth of Gaming</b>
+                        <p>How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <script>
+        let menuActive = document.getElementById('menu-links');
+        let menuIconFixed = document.getElementById('hamburger');
+
+        function myFunction(i) {
+            i.classList.toggle("toggle");
+            menuActive.classList.toggle('menu-active')
+            menuIconFixed.classList.toggle('menu-icon-fixed');
+        }
+    </script>
+</body>
+</html>
